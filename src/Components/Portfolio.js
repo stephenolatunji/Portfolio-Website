@@ -3,6 +3,7 @@ import Header from './Header';
 import Home from './Home';
 import About from './About';
 import Project from './Projects'
+import Footer from './Footer';
 
 class Portfolio extends Component {
 
@@ -13,6 +14,7 @@ class Portfolio extends Component {
                 <Home />
                 <About />
                 <Project />
+                <Footer />
             </div>
         )
     }
