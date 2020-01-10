@@ -10,9 +10,9 @@ import Todo from '../Assets/Todo.jpeg';
 
 const Project = () => {
     return(
-            <Container>
+            <Container >
                 <h1>My Projects</h1>
-                <Card.Group itemsPerRow={3}>
+                <Card.Group itemsPerRow={6}>
                     <Card 
                     raised 
                     image={Player} 
@@ -30,7 +30,7 @@ const Project = () => {
                     image={Wine}
                     href='https://elastic-payne-7677d1.netlify.com'
                     header='Winera'
-                    description='A wine search app for wine enthusiast. Get wine suggestions, reviews and ratings of wines' 
+                    description='A wine search app for wine enthusiasts. Get wine suggestions, reviews and ratings of wines' 
                     />
                     <Card raised 
                     image={Library}
@@ -48,7 +48,7 @@ const Project = () => {
                     image={Todo}
                     href='https://stephen-olatunji.netlify.com'
                     header='Todo App'
-                    description='Allows user to organise there actvities for productivity' 
+                    description='Allows user to organise their actvities for productivity' 
                     />
                 </Card.Group>
                 <Divider />

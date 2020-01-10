@@ -17,8 +17,8 @@ const Home = () => {
                         padding: 50,
                     }}>
                     <Image src={Profile} size='medium' floated='left' circular />
-                    <div align='center'>
-                        <h2><strong>Hello!</strong></h2>
+                    <div align='center' >
+                        <h2 fontFamily='fantasy'><strong>Hello!</strong></h2>
                         <h3>I am Stephen Olatunji</h3>
                     </div>
                 </Segment>

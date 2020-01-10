@@ -1,6 +1,7 @@
 import React from 'react';
-import {Card, Container, Grid, Icon, Segment } from 'semantic-ui-react';
+import { Container, Grid, Icon, Segment, Card } from 'semantic-ui-react';
 import './Index.css';
+
 
  
 
@@ -19,18 +20,17 @@ const About = () => {
                 <Grid>
                     <Grid.Column width={8}>
                         <h1>About Me</h1>
-                        <Card.Group>
-                            <Card color='red'
-                                header='Stephen Olatunji'
-                                meta='Software Developer'
-                                description={[
-                                    'I am a Fullstack Software Developer. ',
-                                    'I am passionate about writing clean codes and developing working softwares'
-                                ]}
-                                style={{
-                                    // padding: 90
-                                }} />
-                        </Card.Group>
+                        <Card
+                            color='orange'
+                            header='Stephen Olatunji'
+                            meta='Software Developer'
+                            description='I am a Fullstack Software developer. I am passionate about writing clean codes and building working softwares.'
+                            
+                            style={{
+                                padding: 20,
+                                fontFamily: 'monospace'
+                            }}
+                        />
                     </Grid.Column>
                     <Grid.Column width={8}>
                         <h1>Skills</h1>
@@ -51,7 +51,7 @@ const About = () => {
                                 <div className='Icons'>
                                     <Icon name='node js' size='big' color='' />
                                     <span>nodeJs</span>
-                                </div>
+                                </div >
                                 
                             </Grid.Column>
                             <Grid.Column width={8}>
@@ -61,12 +61,15 @@ const About = () => {
                                 </div>
                                 <div className='Icons'>
                                     <Icon name='' size='big' color='' />
+                                    <span>mongoDB</span>
                                 </div>
                                 <div className='Icons'>
                                     <Icon name='' size='big' color='' />
+                                    <span>Express Js</span>
                                 </div>
                                 <div className='Icons'>
                                     <Icon name='' size='big' color='' />
+                                    <span>Git</span>
                                 </div>
                                 
                             </Grid.Column>
