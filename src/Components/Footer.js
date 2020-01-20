@@ -9,10 +9,13 @@ const Footer = () => {
     return(
         <Container fluid
         style={{
-            backgroundColor: '#000041',
-            padding: 30,
+           
+            padding: 20,
+            textAlign: 'center'
             
         }}>
+            <p>Contact Me</p>
+            <p><strong>+2347039635385</strong></p>
             <div align='center' color='white'>
                 <a href='https://github.com/stephenolatunji'>
                     <GitHubIcon fontSize='big' 
@@ -29,10 +32,9 @@ const Footer = () => {
                 <a href='mailto:stephenolatunji02@gmail.com'>
                     <EmailIcon 
                     style={{
-                        color: 'white',
+                        color: 'blue',
                     }} />
                 </a>
-                
             </div>
         </Container>
     )

@@ -1,88 +1,96 @@
 import React from 'react';
-import { Container, Grid, Icon, Segment, Card } from 'semantic-ui-react';
-import './Index.css';
-
-
- 
+import { Container, Grid, Card, Image } from 'semantic-ui-react';
+import Mern from '../Assets/MERN.jpg';
+import Mongod from '../Assets/Mongod.png';
+import Express from '../Assets/Express.png';
+import Git from '../Assets/Git.png';
+import Bootstrap from '../Assets/bootstrap.jpeg';
+import CSS from '../Assets/CSS.png';
+import Node from '../Assets/Node.png';
+import Logo from '../Assets/React.png';
+import HTML5 from '../Assets/HTML.png'
 
 
 const About = () => {
     return(
-        <Container fluid style={{
-            marginTop: '200px',
-            backgroundColor: '#aaa'
-        }}>
-            <Segment
-                style={{
-                    padding: 50,
-                    margin: 20,
-                }}>
-                <Grid>
-                    <Grid.Column width={8}>
-                        <h1>About Me</h1>
+        <div>
+            <Container fluid style={{
+                backgroundColor: '#fd8508',
+                padding: 30,
+            }}>
+                <h1 style={{textAlign: 'center'}}>About Me</h1>
+                <Grid stackable columns={2} style={{padding: 30}}>
+                    <Grid.Column>
+                        <Image src={Mern} fluid />
+                    </Grid.Column>
+                    <Grid.Column>
                         <Card
+                            centered
                             color='orange'
                             header='Stephen Olatunji'
                             meta='Software Developer'
-                            description='I am a Fullstack Software developer. I am passionate about writing clean codes and building working softwares.'
-                            
+                            description='I am a Fullstack Software developer. I am passionate about writing clean codes and building working softwares. I enjoy playing chess and scrabble. Someday soon I will visit Paradise on Earth, Bora Bora! '
+
                             style={{
-                                padding: 20,
-                                fontFamily: 'monospace'
+                                fontFamily: 'monospace',
+                                height: '100%',
+                                width: '100%',
+                                padding: 20
                             }}
                         />
                     </Grid.Column>
-                    <Grid.Column width={8}>
-                        <h1>Skills</h1>
-                        <Grid>
-                            <Grid.Column width={8}>
-                                <div className='Icons'>
-                                    <Icon name='react' size='big' color='green ' />
-                                    <span>ReactJs</span>
-                                </div>
-                                <div className='Icons'>
-                                    <Icon name='html5' size='big' color='' />
-                                    <span>HTML5</span>
-                                </div>
-                                <div className='Icons'>
-                                    <Icon name='css3' size='big' color='' />
-                                    <span>css3</span>
-                                </div>
-                                <div className='Icons'>
-                                    <Icon name='node js' size='big' color='' />
-                                    <span>nodeJs</span>
-                                </div >
-                                
-                            </Grid.Column>
-                            <Grid.Column width={8}>
-                                <div className='Icons'>
-                                    <Icon name='js' size='large' color='' />
-                                    <span>Vanilla JavaScript</span>
-                                </div>
-                                <div className='Icons'>
-                                    <Icon name='' size='big' color='' />
-                                    <span>mongoDB</span>
-                                </div>
-                                <div className='Icons'>
-                                    <Icon name='' size='big' color='' />
-                                    <span>Express Js</span>
-                                </div>
-                                <div className='Icons'>
-                                    <Icon name='' size='big' color='' />
-                                    <span>Git</span>
-                                </div>
-                                
-                            </Grid.Column>
-                        </Grid>
-                        
+                </Grid>
+            </Container>
+            <Container fluid 
+            style={{
+                padding: 20
+            }}>
+                <h1 style={{textAlign: 'center'}}>Skills</h1>
+                <Grid columns={2}
+                style={{
+                    padding: 30,
+                    textAlign: 'center'
+                }} >
+                    <Grid.Column>
+                        <p>
+                            <Image src={Logo} avatar size='tiny' />
+                            <span>ReactJs</span>
+                        </p>
+                        <p>
+                            <Image src={HTML5} avatar size='tiny' />
+                            <span>HTML5</span>
+                        </p>
+                        <p>
+                            <Image src={CSS} avatar size='tiny' />
+                            <span>css3</span>
+                        </p>
+                        <p>
+                            <Image src={Node} avatar size='tiny' />
+                            <span>nodeJs</span>
+                        </p>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <p>
+                            <Image src={Bootstrap} avatar size='small' />
+                            <span>Bootstrap</span>
+                        </p>
+                        <p>
+                            <Image src={Mongod} avatar size='small'/>
+                            <span>mongoDB</span>
+                        </p>
+                        <p>
+                            <Image src={Express} avatar size='small' />
+                            <span>Express Js</span>
+                        </p>
+                        <p>
+                            <Image src={Git} size='small' avatar/>
+                            <span>Git</span>
+                        </p>
                     </Grid.Column>
                 </Grid>
-            </Segment>
-            
-        </Container>
-            
+            </Container>
+        </div>
     )
-    
 };
 
 export default About;

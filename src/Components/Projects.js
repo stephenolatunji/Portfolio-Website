@@ -10,9 +10,14 @@ import Todo from '../Assets/Todo.jpeg';
 
 const Project = () => {
     return(
-            <Container >
+            <Container fluid style={{
+                padding: 30,
+                background: 'black',
+                color: 'violet',
+                textAlign: 'center'
+            }} >
                 <h1>My Projects</h1>
-                <Card.Group itemsPerRow={6}>
+                <Card.Group itemsPerRow={6} stackable>
                     <Card 
                     raised 
                     image={Player} 
